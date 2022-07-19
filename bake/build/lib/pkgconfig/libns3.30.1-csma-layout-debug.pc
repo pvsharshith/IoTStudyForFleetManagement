@@ -1,0 +1,10 @@
+prefix=/home/harshith/ns-allinone-3.30.1/bake/build
+libdir=/home/harshith/ns-allinone-3.30.1/bake/build/lib
+includedir=/home/harshith/ns-allinone-3.30.1/bake/build/include/ns3.30.1
+
+Name: libns3-csma-layout
+Description: ns-3 module ns3-csma-layout
+Version: 3.30.1
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.30.1-csma-layout-debug
+Cflags: -I${includedir}
+Requires: libns3.30.1-csma-debug libns3.30.1-network-debug libns3.30.1-internet-debug
